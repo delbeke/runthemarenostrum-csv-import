@@ -3,9 +3,9 @@ const readFileAsync = require('./util/readFileAsync')
 const createDdbInsert = require('./util/createDdbInsert')
 const AWS = require('aws-sdk')
 
-const TABLENAME = 'runthemarenostrum-api-dev-stages'
+const TABLENAME = 'runthemarenostrum-api-production-stages'
 
-AWS.config.update({region: 'eu-central-1'})
+AWS.config.update({region: 'eu-west-1'})
 const ddb = new AWS.DynamoDB({apiVersion: '2012-10-08'})
 
 readFileAsync('stages.csv')

@@ -4,7 +4,11 @@ const onlyUnique = (value, index, self) => {
 
 const split = (text) => {
     if ((typeof text === 'string') && (text.length > 0)) {
-        return text.split(/\/|,/).map(i => i.trim()).filter(onlyUnique)
+        return text.split(/\/|,|;/)
+            .map(i => i.trim())
+            .filter(onlyUnique)
+            .filter(i => i.length > 0)
+            
     } else {
         return []
     }
