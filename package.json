@@ -9,7 +9,7 @@
   "author": "Pieter Delbeke",
   "license": "MIT",
   "dependencies": {
-    "aws-sdk": "^2.533.0",
+    "aws-sdk": "^2.814.0",
     "csv-parse": "^4.4.6",
     "moment": "^2.24.0"
   }
