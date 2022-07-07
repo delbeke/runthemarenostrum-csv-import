@@ -11,6 +11,6 @@
   "dependencies": {
     "aws-sdk": "^2.533.0",
     "csv-parse": "^4.4.6",
-    "moment": "^2.24.0"
+    "moment": "^2.29.4"
   }
 }
